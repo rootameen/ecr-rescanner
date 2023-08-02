@@ -6,14 +6,6 @@ ECR Rescanner targets users of AWS Elastic Container Registry (ECR) and AWS Insp
 
 As of now, the only way to trigger a rescan of an image on ECR is to delete it and re-upload it again. This tool does that, by pulling the detected target images - ones that currently do not have scan results - to the local system, remove them from ECR, then re-upload them again to initiate their scan.
 
-## Installation
-
-To install ECR Rescanner, you will need to have Go installed on your system. Once you have Go installed, you can run the following command to install ECR Rescanner:
-
-```
-go get github.com/rootameen/ecr-rescanner
-```
-
 ## Usage
 
 To use ECR Rescanner, you will need to have AWS credentials set up on your system. Once you have your credentials set up, you can run the following command to scan all images in your ECR repository:
